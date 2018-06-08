@@ -36,4 +36,14 @@ class StringCalculatorTest extends GroovyTestCase {
     assert result == 14
   }
 
+  void testAnyNumbersWithNewLinesBetweenThem(){
+    StringCalculator stringCalculator = new StringCalculator()
+    int result = stringCalculator.add("1,2\n3")
+    assert result == 6
+    result = stringCalculator.add("3\n4,5\n6,7\n8")
+    assert result == 33
+    result = stringCalculator.add("1\n1\n1\n1\n1,1,1,1,1,1\n1,1\n1,1")
+    assert result == 14
+  }
+
 }
