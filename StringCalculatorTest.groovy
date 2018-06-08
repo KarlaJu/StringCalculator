@@ -25,4 +25,15 @@ class StringCalculatorTest extends GroovyTestCase {
     result = stringCalculator.add("7,8")
     assert result == 15
   }
+
+  void testAnyNumbers(){
+    StringCalculator stringCalculator = new StringCalculator()
+    int result = stringCalculator.add("1,2,3")
+    assert result == 6
+    result = stringCalculator.add("3,4,5,6,7,8")
+    assert result == 33
+    result = stringCalculator.add("1,1,1,1,1,1,1,1,1,1,1,1,1,1")
+    assert result == 14
+  }
+
 }
