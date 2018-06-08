@@ -1,6 +1,6 @@
 class StringCalculatorTest extends GroovyTestCase {
 
 	void testNothing(){
-		assert 1 == 2
+		assert 1 == 1
 	}
 }
