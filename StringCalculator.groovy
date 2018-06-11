@@ -1,19 +1,19 @@
 class StringCalculator {
-	int add(String numbers){
-		if(numbers==""){
+	int add(String getnumbers){
+		if(!getnumbers){
 			return 0
 		}
 		else{
-      int number1=0, number2=0, sum=0
-			if(numbers.size()>1){ 
-				def oneLineNumbers=numbers.replaceAll("\n",",")
-				def twonumbers=oneLineNumbers.split(",").collect{it as Integer}
-				twonumbers.sum()
-			}
-			else {
-				def number=numbers.toInteger()
-				number
-			}
-		}
-	}
+      if(getnumbers.size()>1){ 
+        def oneLineNumbers=getnumbers.replaceAll("\n",",")
+        def numbersWithoutCommas=oneLineNumbers.split(",").collect{it as Integer}
+        numbersWithoutCommas.sum()
+      }
+      else {
+        def number=getnumbers.toInteger()
+        number
+      }
+    }
+  }
+
 }
