@@ -46,4 +46,16 @@ class StringCalculatorTest extends GroovyTestCase {
     assert result == 14
   }
 
+/*
+  void testAnyNumbersWithOtherDelimiters(){
+    StringCalculator stringCalculator = new StringCalculator()
+    int result = stringCalculator.add("//;\n1;2;3")
+    assert result == 6
+    result = stringCalculator.add("//#\n3#4#5#6#7#8")
+    assert result == 33
+    result = stringCalculator.add("//|\n1|1|1|1|1|1|1|1|1|1|1|1|1|1")
+    assert result == 14
+  }
+  */
+
 }
