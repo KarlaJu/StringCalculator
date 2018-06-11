@@ -1,13 +1,10 @@
 class StringCalculator {
 	int add(String getnumbers){
-		if(!getnumbers){
-			return 0
-		}
+		if(!getnumbers) 0
 		else{
       if(getnumbers.size()){ 
         def oneLineNumbers=getnumbers.replaceAll("\n",",")
-        def numbersWithoutCommas=oneLineNumbers.split(",").collect{it as Integer}
-        numbersWithoutCommas.sum()
+        oneLineNumbers.split(",").collect{it as Integer}.sum()
       }
       else {
         getnumbers.toInteger()
