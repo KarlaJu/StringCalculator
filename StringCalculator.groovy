@@ -19,16 +19,13 @@ class StringCalculator {
     }
   }
   
-  private String replaceOtherDelimiterForCommas(String numbers){
-  	String delimiter="\\"+numbers[2].toString()
-		numbers.substring(4).replaceAll(delimiter,",")
-  }
-
-  private String identifyDelimither(String numbers){
-    numbers.contains("/") ? replaceOtherDelimiterForCommas(numbers) : numbers.replaceAll("\n",",")
+  private String quitBreakLines(String numbers){
+    numbers.replaceAll("\n",",")
   }
   
   private Integer doTheStringCalculator(String numbers){
-    identifyDelimither(numbers).split(",")*.toInteger().sum()
+    ArrayList numberList=[]
+    quitBreakLines(numbers).each{it.isInteger() ? numberList<<it.toInteger() : 0}
+    numberList.sum()
   }
 }
