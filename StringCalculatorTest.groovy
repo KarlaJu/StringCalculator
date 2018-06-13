@@ -56,6 +56,18 @@ class StringCalculatorTest extends GroovyTestCase {
     result = stringCalculator.add("//|\n1|1|1|1|1|1|1|1|1|1|1|1|1|1")
     assert result == 14
   }
-  
+
+  void testNegativeNumbersInString(){
+    StringCalculator stringCalculator = new StringCalculator()
+    String message = shouldFail {
+      stringCalculator.add("1,2,3,-4,5,6")  
+    }
+    assert message == "negatives not allowed -4"
+
+    message = shouldFail {
+      stringCalculator.add("1,-2,3,-4,5,-6")  
+    }
+    assert message == "negatives not allowed -2 -4 -6"
+  }
 
 }
