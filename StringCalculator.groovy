@@ -1,7 +1,7 @@
 class StringCalculator {
-	int add(String numbers){
-		if(verifyTheStringIsEmpty(numbers)) 0
-		else 
+  int add(String numbers){
+    if(verifyTheStringIsEmpty(numbers)) 0
+    else 
       verifyIfTheStringHasNegativeNumbers(numbers) ? 0 : doTheStringCalculator(numbers)
   }
 
@@ -19,13 +19,17 @@ class StringCalculator {
     }
   }
   
-  private String quitBreakLines(String numbers){
-    numbers.replaceAll("\n",",")
+  private String replaceOtherDelimiterForCommas(String numbers){
+    String delimiter=numbers.substring(2, numbers.indexOf("\n"))
+    return numbers.substring(4).replaceAll(delimiter,",")
+  }
+
+  private String identifyDelimither(String numbers){
+    numbers.contains("/") ? replaceOtherDelimiterForCommas(numbers) : numbers.replaceAll("\n",",")
   }
   
   private Integer doTheStringCalculator(String numbers){
-    ArrayList numberList=[]
-    quitBreakLines(numbers).each{it.isInteger() ? numberList<<it.toInteger() : 0}
-    numberList.sum()
+    identifyDelimither(numbers).split(",")*.toInteger().sum()
   }
 }
+
