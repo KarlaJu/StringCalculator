@@ -11,16 +11,17 @@ class StringCalculator {
   private String stringWithoutBreakLines(String numbers){
     numbers.replaceAll("\n",",")
   }
-
-  private String verifyIfTheStringHasOtherDelimither(String numbers){
-    if(stringWithoutBreakLines(numbers).contains("/")){
-      String delimiter=numbers.charAt(2)
-      numbers.replaceAll("$delimiter",",")
-    }
-    else stringWithoutBreakLines(numbers)
+  
+  private String replaceOtherDelimiterForCommas(String numbers){
+  	String delimiter=numbers.charAt(2).toString()
+		numbers.substring(4).replaceAll(delimiter,",")
   }
 
+  private String verifyIfTheStringHasOtherDelimither(String numbers){
+    numbers.contains("/") ? replaceOtherDelimiterForCommas(numbers) : stringWithoutBreakLines(numbers)
+  }
+  
   private Integer doTheStringCalculator(String numbers){
-    stringWithoutBreakLines(numbers).split(",")*.toInteger().sum()
+    verifyIfTheStringHasOtherDelimither(numbers).split(",")*.toInteger().sum()
   }
 }
