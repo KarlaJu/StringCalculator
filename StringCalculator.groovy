@@ -13,7 +13,7 @@ class StringCalculator {
   }
   
   private String replaceOtherDelimiterForCommas(String numbers){
-  	String delimiter=numbers.charAt(2).toString()
+  	String delimiter="\\"+numbers.charAt(2).toString()
 		numbers.substring(4).replaceAll(delimiter,",")
   }
 
