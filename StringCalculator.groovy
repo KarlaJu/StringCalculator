@@ -1,10 +1,8 @@
 class StringCalculator {
 	int add(String numbers){
 		if(verifyTheStringIsEmpty(numbers)) 0
-		else {
-      if(verifyIfTheStringHasNegativeNumbers(numbers)) 0
-      else doTheStringCalculator(numbers)
-    }
+		else 
+      verifyIfTheStringHasNegativeNumbers(numbers) ? 0 : doTheStringCalculator(numbers)
   }
 
   private verifyTheStringIsEmpty(String numbers){
