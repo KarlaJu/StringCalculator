@@ -1,22 +1,24 @@
 class StringCalculator {
-  int add(String numbers){
-    if(verifyTheStringIsEmpty(numbers)) 0
-    else 
-      verifyIfTheStringHasNegativeNumbers(numbers) ? 0 : doTheStringCalculator(numbers)
-  }
+	int add(String numbers){
+		if(verifyTheStringIsEmpty(numbers)) 0
+		else {
+      verifyIfTheStringHasNegativeNumbers(numbers)
+      doTheStringCalculator(numbers)
+    }
 
-  private verifyTheStringIsEmpty(String numbers){
+  }
+  
+  private Boolean verifyTheStringIsEmpty(String numbers){
     numbers=="" || numbers == null
   }
 
-  private verifyIfTheStringHasNegativeNumbers(String numbers){
+  private void verifyIfTheStringHasNegativeNumbers(String numbers){
     if(numbers.contains("-"))
-    {
-      def negativeNumbers=""
-      def numberList=numbers.split(",")*.toInteger()
-      numberList.each{i->  i<0 ? negativeNumbers=negativeNumbers+" "+i : 0}
-      throw new RuntimeException("negatives not allowed"+negativeNumbers)
-    }
+      throw new RuntimeException("negatives not allowed ${findNegativeNumbers(numbers).join(' ')}")
+  }
+
+  private List findNegativeNumbers(String numbers){
+    numbers.split(",")*.toInteger().findAll{i->  i<0 }
   }
 
   private def devuelve(String numbers){
