@@ -23,13 +23,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">7</div>
+<div class="counter">18</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.174s</div>
+<div class="counter">0.158s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">85%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,34 +61,10 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
-</li>
-<li>
-<a href="#tab1">Tests</a>
+<a href="#tab0">Tests</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="Testing negative numbers in the string, should return message error"></a>
-<h3 class="failures">Testing negative numbers in the string, should return message error</h3>
-<span class="code">
-<pre>java.lang.RuntimeException: negatives not allowed -4
-	at StringCalculator.verifyIfTheStringHasNegativeNumbers(StringCalculator.groovy:19)
-	at StringCalculator.add(StringCalculator.groovy:8)
-	at StringCalculatorTest.Testing negative numbers in the string, should return message error(StringCalculatorTest.groovy:108)
-</pre>
-</span>
-<span class="code">
-<pre>java.lang.RuntimeException: negatives not allowed -2 -4 -6
-	at StringCalculator.verifyIfTheStringHasNegativeNumbers(StringCalculator.groovy:19)
-	at StringCalculator.add(StringCalculator.groovy:8)
-	at StringCalculatorTest.Testing negative numbers in the string, should return message error(StringCalculatorTest.groovy:108)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -100,37 +76,92 @@
 </thead>
 <tr>
 <td class="success">Testing an empty string should return cero</td>
-<td>0.094s</td>
+<td>0.095s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Testing any numbers with new lines between them, should return the sum of numbers</td>
-<td>0.003s</td>
+<td class="success">Testing any numbers with new lines between them, should return the sum of numbers[0]</td>
+<td>0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Testing any numbers with new lines between them, should return the sum of numbers</td>
+<td class="success">Testing any numbers with new lines between them, should return the sum of numbers[0]</td>
 <td>0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Testing any numbers, should return the sum of numbers</td>
-<td>0.002s</td>
+<td class="success">Testing any numbers with new lines between them, should return the sum of numbers[1]</td>
+<td>0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">Testing negative numbers in the string, should return message error</td>
-<td>0.030s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="success">Testing one number, should return the same number</td>
-<td>0.032s</td>
+<td class="success">Testing any numbers with new lines between them, should return the sum of numbers[1]</td>
+<td>0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Testing two numbers, should return the sum of numbers</td>
-<td>0.012s</td>
+<td class="success">Testing any numbers with new lines between them, should return the sum of numbers[2]</td>
+<td>0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testing any numbers with new lines between them, should return the sum of numbers[2]</td>
+<td>0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testing any numbers, should return the sum of numbers[0]</td>
+<td>0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testing any numbers, should return the sum of numbers[1]</td>
+<td>0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testing any numbers, should return the sum of numbers[2]</td>
+<td>0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testing negative numbers in the string, should throw exception[0]</td>
+<td>0.021s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testing negative numbers in the string, should throw exception[1]</td>
+<td>0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testing one number, should return the same number[0]</td>
+<td>0.023s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testing one number, should return the same number[1]</td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testing one number, should return the same number[2]</td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testing two numbers, should return the sum of numbers[0]</td>
+<td>0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testing two numbers, should return the sum of numbers[1]</td>
+<td>0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testing two numbers, should return the sum of numbers[2]</td>
+<td>0.001s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -143,7 +174,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.6</a> at 18/06/2018 01:02:18 PM</p>
+<a href="http://www.gradle.org">Gradle 4.6</a> at 20/06/2018 01:19:58 PM</p>
 </div>
 </div>
 </body>

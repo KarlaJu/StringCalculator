@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StringCalculatorTest" tests="7" skipped="0" failures="1" errors="0" timestamp="2018-06-18T18:02:18" hostname="iMac-de-Makingdevs-2.local" time="0.175">
+<testsuite name="StringCalculatorTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2018-06-20T18:19:58" hostname="iMac-de-Makingdevs-2.local" time="0.177">
   <properties/>
-  <testcase name="Testing an empty string should return cero" classname="StringCalculatorTest" time="0.094"/>
-  <testcase name="Testing one number, should return the same number" classname="StringCalculatorTest" time="0.032"/>
-  <testcase name="Testing two numbers, should return the sum of numbers" classname="StringCalculatorTest" time="0.012"/>
-  <testcase name="Testing any numbers, should return the sum of numbers" classname="StringCalculatorTest" time="0.002"/>
-  <testcase name="Testing any numbers with new lines between them, should return the sum of numbers" classname="StringCalculatorTest" time="0.001"/>
-  <testcase name="Testing any numbers with new lines between them, should return the sum of numbers" classname="StringCalculatorTest" time="0.003"/>
-  <testcase name="Testing negative numbers in the string, should return message error" classname="StringCalculatorTest" time="0.03">
-    <failure message="java.lang.RuntimeException: negatives not allowed -4" type="java.lang.RuntimeException">java.lang.RuntimeException: negatives not allowed -4
-	at StringCalculator.verifyIfTheStringHasNegativeNumbers(StringCalculator.groovy:19)
-	at StringCalculator.add(StringCalculator.groovy:8)
-	at StringCalculatorTest.Testing negative numbers in the string, should return message error(StringCalculatorTest.groovy:108)
-</failure>
-    <failure message="java.lang.RuntimeException: negatives not allowed -2 -4 -6" type="java.lang.RuntimeException">java.lang.RuntimeException: negatives not allowed -2 -4 -6
-	at StringCalculator.verifyIfTheStringHasNegativeNumbers(StringCalculator.groovy:19)
-	at StringCalculator.add(StringCalculator.groovy:8)
-	at StringCalculatorTest.Testing negative numbers in the string, should return message error(StringCalculatorTest.groovy:108)
-</failure>
-  </testcase>
+  <testcase name="Testing an empty string should return cero" classname="StringCalculatorTest" time="0.095"/>
+  <testcase name="Testing one number, should return the same number[0]" classname="StringCalculatorTest" time="0.023"/>
+  <testcase name="Testing one number, should return the same number[1]" classname="StringCalculatorTest" time="0.0"/>
+  <testcase name="Testing one number, should return the same number[2]" classname="StringCalculatorTest" time="0.0"/>
+  <testcase name="Testing two numbers, should return the sum of numbers[0]" classname="StringCalculatorTest" time="0.01"/>
+  <testcase name="Testing two numbers, should return the sum of numbers[1]" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="Testing two numbers, should return the sum of numbers[2]" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="Testing any numbers, should return the sum of numbers[0]" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="Testing any numbers, should return the sum of numbers[1]" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="Testing any numbers, should return the sum of numbers[2]" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="Testing any numbers with new lines between them, should return the sum of numbers[0]" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="Testing any numbers with new lines between them, should return the sum of numbers[1]" classname="StringCalculatorTest" time="0.0"/>
+  <testcase name="Testing any numbers with new lines between them, should return the sum of numbers[2]" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="Testing any numbers with new lines between them, should return the sum of numbers[0]" classname="StringCalculatorTest" time="0.0"/>
+  <testcase name="Testing any numbers with new lines between them, should return the sum of numbers[1]" classname="StringCalculatorTest" time="0.0"/>
+  <testcase name="Testing any numbers with new lines between them, should return the sum of numbers[2]" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="Testing negative numbers in the string, should throw exception[0]" classname="StringCalculatorTest" time="0.021"/>
+  <testcase name="Testing negative numbers in the string, should throw exception[1]" classname="StringCalculatorTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
