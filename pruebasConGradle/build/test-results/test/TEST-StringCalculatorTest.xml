@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StringCalculatorTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2018-06-20T18:19:58" hostname="iMac-de-Makingdevs-2.local" time="0.177">
+<testsuite name="StringCalculatorTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2018-06-26T17:24:40" hostname="iMac-de-Makingdevs-2.local" time="0.166">
   <properties/>
-  <testcase name="Testing an empty string should return cero" classname="StringCalculatorTest" time="0.095"/>
-  <testcase name="Testing one number, should return the same number[0]" classname="StringCalculatorTest" time="0.023"/>
-  <testcase name="Testing one number, should return the same number[1]" classname="StringCalculatorTest" time="0.0"/>
-  <testcase name="Testing one number, should return the same number[2]" classname="StringCalculatorTest" time="0.0"/>
-  <testcase name="Testing two numbers, should return the sum of numbers[0]" classname="StringCalculatorTest" time="0.01"/>
-  <testcase name="Testing two numbers, should return the sum of numbers[1]" classname="StringCalculatorTest" time="0.001"/>
-  <testcase name="Testing two numbers, should return the sum of numbers[2]" classname="StringCalculatorTest" time="0.001"/>
-  <testcase name="Testing any numbers, should return the sum of numbers[0]" classname="StringCalculatorTest" time="0.001"/>
-  <testcase name="Testing any numbers, should return the sum of numbers[1]" classname="StringCalculatorTest" time="0.001"/>
-  <testcase name="Testing any numbers, should return the sum of numbers[2]" classname="StringCalculatorTest" time="0.001"/>
-  <testcase name="Testing any numbers with new lines between them, should return the sum of numbers[0]" classname="StringCalculatorTest" time="0.001"/>
-  <testcase name="Testing any numbers with new lines between them, should return the sum of numbers[1]" classname="StringCalculatorTest" time="0.0"/>
-  <testcase name="Testing any numbers with new lines between them, should return the sum of numbers[2]" classname="StringCalculatorTest" time="0.001"/>
-  <testcase name="Testing any numbers with new lines between them, should return the sum of numbers[0]" classname="StringCalculatorTest" time="0.0"/>
-  <testcase name="Testing any numbers with new lines between them, should return the sum of numbers[1]" classname="StringCalculatorTest" time="0.0"/>
-  <testcase name="Testing any numbers with new lines between them, should return the sum of numbers[2]" classname="StringCalculatorTest" time="0.001"/>
-  <testcase name="Testing negative numbers in the string, should throw exception[0]" classname="StringCalculatorTest" time="0.021"/>
-  <testcase name="Testing negative numbers in the string, should throw exception[1]" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="Testing an empty string should return cero" classname="StringCalculatorTest" time="0.087"/>
+  <testcase name="Testing one number in the string: '1', should return the same number: 1" classname="StringCalculatorTest" time="0.023"/>
+  <testcase name="Testing one number in the string: '3', should return the same number: 3" classname="StringCalculatorTest" time="0.0"/>
+  <testcase name="Testing one number in the string: '7', should return the same number: 7" classname="StringCalculatorTest" time="0.0"/>
+  <testcase name="The sum of two numbers in the string: '1,2', should be 3" classname="StringCalculatorTest" time="0.01"/>
+  <testcase name="The sum of two numbers in the string: '3,4', should be 7" classname="StringCalculatorTest" time="0.0"/>
+  <testcase name="The sum of two numbers in the string: '7,8', should be 15" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="The sum of numbers in the string '1,2,3' should be 6" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="The sum of numbers in the string '3,4,5,6,7,8' should be 33" classname="StringCalculatorTest" time="0.0"/>
+  <testcase name="The sum of numbers in the string '1,1,1,1,1,1,1,1,1,1,1,1,1,1' should be 14" classname="StringCalculatorTest" time="0.0"/>
+  <testcase name="Testing numbers in the string with new lines between them '1,2&#10;3', should return the sum of numbers: 6" classname="StringCalculatorTest" time="0.0"/>
+  <testcase name="Testing numbers in the string with new lines between them '3&#10;4,5&#10;6,7&#10;8', should return the sum of numbers: 33" classname="StringCalculatorTest" time="0.0"/>
+  <testcase name="Testing numbers in the string with new lines between them '1&#10;1&#10;1&#10;1&#10;1,1,1,1,1,1&#10;1,1&#10;1,1', should return the sum of numbers: 14" classname="StringCalculatorTest" time="0.0"/>
+  <testcase name="Testing the sum of numbers with new delimiters: '//;&#10;1;2;3', should be: 6" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="Testing the sum of numbers with new delimiters: '//#&#10;3#4#5#6#7#8', should be: 33" classname="StringCalculatorTest" time="0.0"/>
+  <testcase name="Testing the sum of numbers with new delimiters: '//|&#10;1|1|1|1|1|1|1|1|1|1|1|1|1|1', should be: 14" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="Testing negative numbers in the string: '1,2,3,-4,5,6', should throw exception: negatives not allowed -4" classname="StringCalculatorTest" time="0.019"/>
+  <testcase name="Testing negative numbers in the string: '1,-2,3,-4,5,-6', should throw exception: negatives not allowed -2 -4 -6" classname="StringCalculatorTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

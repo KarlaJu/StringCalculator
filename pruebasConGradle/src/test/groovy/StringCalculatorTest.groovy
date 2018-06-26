@@ -18,7 +18,7 @@ class StringCalculatorTest extends Specification {
   }
 
   @Unroll
-  def "Testing one number, should return the same number"() {
+  def "Testing one number in the string: '#strings', should return the same number: #sameNumber"(){
     
     given:"a string"
       String string = strings
@@ -34,7 +34,7 @@ class StringCalculatorTest extends Specification {
   }
 
   @Unroll
-  def "Testing two numbers, should return the sum of numbers"() {
+  def "The sum of two numbers in the string: '#strings', should be #sumNumbers"() {
     
     given:"a string"
       String string = strings
@@ -50,7 +50,7 @@ class StringCalculatorTest extends Specification {
   }
 
   @Unroll
-  def "Testing any numbers, should return the sum of numbers"() {
+  def "The sum of numbers in the string '#strings' should be #sumNumbers"() {
     
     given:"a string"
       String string = strings
@@ -66,7 +66,7 @@ class StringCalculatorTest extends Specification {
   }
 
   @Unroll
-  def "Testing any numbers with new lines between them, should return the sum of numbers"() {
+  def "Testing numbers in the string with new lines between them '#strings', should return the sum of numbers: #sumNumbers"() {
     
     given:"a string"
       String string = strings
@@ -82,7 +82,7 @@ class StringCalculatorTest extends Specification {
   }
 
   @Unroll
-  def "Testing any numbers with new lines between them, should return the sum of numbers"() {
+  def "Testing the sum of numbers with new delimiters: '#strings', should be: #sumNumbers"() {
     
     given:"a string"
       String string = strings
@@ -98,7 +98,7 @@ class StringCalculatorTest extends Specification {
   }
 
   @Unroll
-  def "Testing negative numbers in the string, should throw exception"() {
+  def "Testing negative numbers in the string: '#strings', should throw exception: #errorMessage"() {
     
     given:"a string"
       String string = strings

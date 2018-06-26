@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.158s</div>
+<div class="counter">0.144s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,91 +76,104 @@
 </thead>
 <tr>
 <td class="success">Testing an empty string should return cero</td>
-<td>0.095s</td>
+<td>0.087s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Testing any numbers with new lines between them, should return the sum of numbers[0]</td>
+<td class="success">Testing negative numbers in the string: '1,-2,3,-4,5,-6', should throw exception: negatives not allowed -2 -4 -6</td>
+<td>0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testing negative numbers in the string: '1,2,3,-4,5,6', should throw exception: negatives not allowed -4</td>
+<td>0.019s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testing numbers in the string with new lines between them '1
+1
+1
+1
+1,1,1,1,1,1
+1,1
+1,1', should return the sum of numbers: 14</td>
 <td>0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Testing any numbers with new lines between them, should return the sum of numbers[0]</td>
-<td>0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Testing any numbers with new lines between them, should return the sum of numbers[1]</td>
+<td class="success">Testing numbers in the string with new lines between them '1,2
+3', should return the sum of numbers: 6</td>
 <td>0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Testing any numbers with new lines between them, should return the sum of numbers[1]</td>
+<td class="success">Testing numbers in the string with new lines between them '3
+4,5
+6,7
+8', should return the sum of numbers: 33</td>
 <td>0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Testing any numbers with new lines between them, should return the sum of numbers[2]</td>
-<td>0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Testing any numbers with new lines between them, should return the sum of numbers[2]</td>
-<td>0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Testing any numbers, should return the sum of numbers[0]</td>
-<td>0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Testing any numbers, should return the sum of numbers[1]</td>
-<td>0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Testing any numbers, should return the sum of numbers[2]</td>
-<td>0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Testing negative numbers in the string, should throw exception[0]</td>
-<td>0.021s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Testing negative numbers in the string, should throw exception[1]</td>
-<td>0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Testing one number, should return the same number[0]</td>
+<td class="success">Testing one number in the string: '1', should return the same number: 1</td>
 <td>0.023s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Testing one number, should return the same number[1]</td>
+<td class="success">Testing one number in the string: '3', should return the same number: 3</td>
 <td>0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Testing one number, should return the same number[2]</td>
+<td class="success">Testing one number in the string: '7', should return the same number: 7</td>
 <td>0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Testing two numbers, should return the sum of numbers[0]</td>
-<td>0.010s</td>
+<td class="success">Testing the sum of numbers with new delimiters: '//#
+3#4#5#6#7#8', should be: 33</td>
+<td>0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Testing two numbers, should return the sum of numbers[1]</td>
+<td class="success">Testing the sum of numbers with new delimiters: '//;
+1;2;3', should be: 6</td>
 <td>0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Testing two numbers, should return the sum of numbers[2]</td>
+<td class="success">Testing the sum of numbers with new delimiters: '//|
+1|1|1|1|1|1|1|1|1|1|1|1|1|1', should be: 14</td>
+<td>0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">The sum of numbers in the string '1,1,1,1,1,1,1,1,1,1,1,1,1,1' should be 14</td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">The sum of numbers in the string '1,2,3' should be 6</td>
+<td>0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">The sum of numbers in the string '3,4,5,6,7,8' should be 33</td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">The sum of two numbers in the string: '1,2', should be 3</td>
+<td>0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">The sum of two numbers in the string: '3,4', should be 7</td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">The sum of two numbers in the string: '7,8', should be 15</td>
 <td>0.001s</td>
 <td class="success">passed</td>
 </tr>
@@ -174,7 +187,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.6</a> at 20/06/2018 01:19:58 PM</p>
+<a href="http://www.gradle.org">Gradle 4.6</a> at 26/06/2018 12:24:40 PM</p>
 </div>
 </div>
 </body>
